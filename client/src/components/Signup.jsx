@@ -11,19 +11,20 @@ const Signup = () =>{
         email: "",
         password: "",
         cpassword: ""
+
     });
 
-    
+
     const handleChange = (event) =>{
         const { name, value} = event.target;
-        
+
         setUser(prevValue => {
             return (
                 {...prevValue,
                 [name]: value}
             )
-            
-        })  
+
+        })
     }
 
     const handleSubmit = async (event) =>{
